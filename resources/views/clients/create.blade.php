@@ -17,67 +17,67 @@
       <form method="post" action="{{ route('clientes.store') }}">
           @csrf
           <div class="form-group">    
-              <label for="first_name">Nome:</label>
+              <label for="first_name">Nome:*</label>
               <input type="text" class="form-control" name="name"/>
           </div>
 
           <div class="form-group">
-              <label for="cpf">CPF:</label>
+              <label for="cpf">CPF:*</label>
               <input type="text" class="form-control" name="cpf" id="cpf"/>
           </div>
 
           <div class="form-group">
-              <label for="email">Email:</label>
+              <label for="email">Email:*</label>
               <input type="text" class="form-control" name="email"/>
           </div>
           
           <div class="form-group">
-              <label for="country">Senha:</label>
-              <input type="text" class="form-control" name="country"/>
+              <label for="country">Senha:*</label>
+              <input type="password" class="form-control" name="password"/>
           </div>
 
           <div class="form-group">
-              <label for="cep">CEP:</label>
+              <label for="cep">CEP:*</label>
               <input type="text" class="form-control" name="cep" id="cep"/>
           </div>
 
           <div class="form-group">
-              <label for="rua">Rua:</label>
-              <input type="text" class="form-control" name="rua" id="rua"/>
+              <label for="rua">Rua:*</label>
+              <input type="text" class="form-control" name="street" id="rua"/>
           </div>
 
           <div class="form-group">
-              <label for="rua">Cidade:</label>
-              <input type="text" class="form-control" name="cidade" id="cidade"/>
+              <label for="rua">Cidade:*</label>
+              <input type="text" class="form-control" name="city" id="cidade"/>
           </div>
           
           <div class="form-group">
-              <label for="estado">Estado:</label>
+              <label for="estado">Estado:*</label>
               <input type="text" class="form-control" name="uf" id="uf"/>
           </div>
 
           <div class="form-group">
-              <label for="rua">Bairro:</label>
-              <input type="text" class="form-control" name="bairro" id="bairro"/>
+              <label for="rua">Bairro:*</label>
+              <input type="text" class="form-control" name="neigh" id="bairro"/>
           </div>
 
           <div class="form-group">
-              <label for="country">N°:</label>
-              <input type="text" class="form-control" name="country"/>
+              <label for="country">N°:*</label>
+              <input type="text" class="form-control" name="number"/>
           </div>
           
           <div class="form-group">
-              <label for="country">Telefone:</label>
-              <input type="text" class="form-control" name="country"/>
+              <label for="country">Telefone:*</label>
+              <input type="text" class="form-control" name="phone"/>
           </div>
 
           <div class="form-group">
-              <label for="data de nascimento">Data de Nascimento:</label>
-              <input type="text" class="form-control" name="dt_nasc" id="dt_nasc"/>
+              <label for="data de nascimento">Data de Nascimento:*</label>
+              <input type="text" class="form-control" name="birth_date" id="dt_nasc"/>
           </div>
 
           <div class="form-group">
-            <label for="country">Gênero:</label>
+            <label for="country">Gênero:*</label>
             <br>
             <input type="radio" id="male" name="gender" value="m">
             <label for="male">Masculino</label><br>
@@ -111,14 +111,13 @@ $('#cep').on('change', function(){
     if (!("erro" in dados)) {
         //Atualiza os campos com os valores da consulta.
         console.log(dados);
-        $("#rua").val(dados.logradouro);
-        $("#cidade").val(dados.localidade);
-        $("#bairro").val(dados.bairro);
-        $("#uf").val(dados.uf);        
+        $("#rua").val(dados.logradouro).prop('readonly', true);;
+        $("#cidade").val(dados.localidade).prop('readonly', true);;
+        $("#bairro").val(dados.bairro).prop('readonly', true);;
+        $("#uf").val(dados.uf).prop('readonly', true);;        
     } 
     else {
-        $("#cep").val("");
-        alert("CEP não encontrado.");
+        alert("CEP não encontrado!");
     }
     
   });

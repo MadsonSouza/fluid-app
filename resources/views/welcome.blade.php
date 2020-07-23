@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
 
         <!-- Styles -->
         <style>
@@ -68,7 +69,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Fluid App
+                <h1>Fluid App</h1>
                 </div>
 
                 <div class="links">

@@ -22,23 +22,24 @@
           <td>Endereço</td>
           <td>CEP</td>
           <td>CPF</td>
-          <td colspan = 2> - </td>
+          <td colspan = 2></td>
         </tr>
     </thead>
     <tbody>
-        @foreach($clients as $contact)
+        @foreach($clients as $client)
         <tr>
-            <td>{{$contact->id}}</td>
-            <td>{{$contact->first_name}} {{$contact->last_name}}</td>
-            <td>{{$contact->email}}</td>
-            <td>{{$contact->job_title}}</td>
-            <td>{{$contact->city}}</td>
-            <td>{{$contact->country}}</td>
+            <td>{{$client->id}}</td>
+            <td>{{$client->name}}</td>
+            <td>{{$client->email}}</td>
+            <td>{{$client->phone}}</td>
+            <td>{{$client->street}} {{$client->number}} {{$client->neigh}}</td>
+            <td>{{$client->cep}}</td>
+            <td>{{$client->cpf}}</td>
             <td>
-                <a href="{{ route('contacts.edit',$contact->id)}}" class="btn btn-primary">Editar</a>
+                <a href="{{ route('clientes.edit',$client->id)}}" class="btn btn-primary">Editar</a>
             </td>
             <td>
-                <form action="{{ route('contacts.destroy', $contact->id)}}" method="post">
+                <form action="{{ route('clientes.destroy', $client->id)}}" method="post">
                   @csrf
                   @method('DELETE')
                   <button class="btn btn-danger" type="submit">Apagar</button>
