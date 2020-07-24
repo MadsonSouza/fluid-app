@@ -20,61 +20,61 @@
             <div class="form-group">
 
                 <label for="nome">Nome:*</label>
-                <input type="text" class="form-control" name="name" value={{ $client->name }} />
+                <input type="text" class="form-control" name="name" value="{{ $client->name }}" />
             </div>
 
             <div class="form-group">
                 <label for="cpf">CPF:*</label>
-                <input type="text" class="form-control" name="cpf"  id="cpf" value={{ $client->cpf }}/>
+                <input type="text" class="form-control" name="cpf"  id="cpf" value="{{ $client->cpf }}" />
             </div>
 
             <div class="form-group">
                 <label for="email">Email:*</label>
-                <input type="text" class="form-control" name="email" value={{ $client->email }} />
+                <input type="text" class="form-control" name="email" value="{{ $client->email }}" />
             </div>
             <div class="form-group">
                 <label for="password">Senha:*</label>
-                <input type="text" class="form-control" name="password" value={{ $client->password }} readonly />
+                <input type="text" class="form-control" name="password" value="{{ $client->password }}" readonly />
             </div>
 
             <div class="form-group">
                 <label for="cep">CEP*:</label>
-                <input type="text" class="form-control" name="cep" id="cep" value={{ $client->cep }} />
+                <input type="text" class="form-control" name="cep" id="cep" value="{{ $client->cep }}" />
             </div>
 
             <div class="form-group">
                 <label for="rua">Rua*:</label>
-                <input type="text" class="form-control" name="street" value={{ $client->street }} />
+                <input type="text" class="form-control" name="street" value="{{ $client->street }}" />
             </div>
 
             <div class="form-group">
                 <label for="cidade">Cidade*:</label>
-                <input type="text" class="form-control" name="city" value={{ $client->city }} />
+                <input type="text" class="form-control" name="city" value="{{ $client->city }}" />
             </div>
 
             <div class="form-group">
                 <label for="estado">Estado*:</label>
-                <input type="text" class="form-control" name="uf" value={{ $client->uf }} />
+                <input type="text" class="form-control" name="uf" value="{{ $client->uf }}" />
             </div>
 
             <div class="form-group">
                 <label for="bairro">Bairro*:</label>
-                <input type="text" class="form-control" name="neigh" value={{ $client->neigh }} />
+                <input type="text" class="form-control" name="neigh" value="{{ $client->neigh }}" />
             </div>
 
             <div class="form-group">
                 <label for="numero">N°*:</label>
-                <input type="text" class="form-control" name="number" value={{ $client->number }} />
+                <input type="text" class="form-control" name="number" value="{{ $client->number }}" />
             </div>
 
             <div class="form-group">
                 <label for="telefone">Telefone°*:</label>
-                <input type="text" class="form-control" name="phone" value={{ $client->phone }} />
+                <input type="text" class="form-control" name="phone" value="{{ $client->phone }}" />
             </div>            
 
             <div class="form-group">
                 <label for="data de nascimento">Data de Nascimento*:</label>
-                <input type="text" class="form-control" name="birth_date" id="dt_nasc" value={{ date('d/m/Y', strtotime($client->birth_date)) }}/>
+                <input type="text" class="form-control" name="birth_date" id="dt_nasc" value="{{ date('d/m/Y', strtotime($client->birth_date)) }}" />
             </div>
             
             <div class="form-group">
