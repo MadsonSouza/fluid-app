@@ -9,6 +9,11 @@ E para metodologias ágeis, costumo usar SCRUM. Onde existem vários processos A
 3. Você se sente capaz de liderar esta equipe? Por quê? 
 Sim. Tenho experiência em coordenação de atividades em uma equipe de 3 pessoas. Apesar de que nesta equipe eu também desenvolvia tecnicamente. Uma pessoa a mais seria um pequeno desafio a mais.
 
-4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria? 5. Acha válido esse desafio para o processo que está participando?
-Particularmente gostei da forma que o desafio está sendo implementado, a possibilidade de desenvolver no ambiente de conforto (linguagem e plataforma) 
-torna mais proveitoso pra quem participa, visto que a gente entende, que para um bom desenvolvedor a plataforma é apenas uma curva no aprendizado, visto que a lógica conseguimos aplicar em qualquer que seja a demanda. 
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria? 
+Particularmente gostei da forma que o desafio está sendo implementado. 
+
+5. Acha válido esse desafio para o processo que está participando?
+Sim a possibilidade de desenvolver no ambiente de conforto (linguagem e plataforma) 
+torna mais proveitoso pra quem participa, visto que a gente entende, que para um bom desenvolvedor
+a plataforma é apenas uma curva no aprendizado, visto que a lógica conseguimos aplicar em qualquer 
+que seja a demanda. 
